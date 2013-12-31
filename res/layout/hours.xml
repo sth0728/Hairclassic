@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Hours"
+        android:textColor="#ffffff"
+        android:textSize="33px" />
+
+    <TextView
+        android:id="@+id/monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffffff"
+        android:text="Monday: 11am-8pm" />
+
+    <TextView
+        android:id="@+id/tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/monday"
+        android:layout_below="@+id/monday"
+        android:text="Tuesday: 11am-8pm"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tuesday"
+        android:layout_below="@+id/tuesday"
+        android:text="Wednesday: 11am-8pm"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/Thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wednesday"
+        android:layout_below="@+id/wednesday"
+        android:text="Thursday: 11am-8pm"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saturday"
+        android:layout_below="@+id/saturday"
+        android:text="Sunday: closed"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Thursday"
+        android:layout_below="@+id/Thursday"
+        android:text="Friday: 11am-8pm"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friday"
+        android:layout_below="@+id/friday"
+        android:text="Saturday: 11am-8pm"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
