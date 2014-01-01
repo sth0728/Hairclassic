@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:text="Hours"
         android:textColor="#ffffff"
-        android:textSize="33px" />
+        android:textSize="33sp" />
 
     <TextView
         android:id="@+id/monday"

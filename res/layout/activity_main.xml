@@ -44,4 +44,45 @@
         android:text="Staffs"
         android:textColor="#ffffff" />
 
+
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/staffs"
+        android:layout_alignRight="@+id/staffs"
+        android:layout_below="@+id/staffs"
+        android:layout_marginTop="20dp"
+        android:background="#8A2908"
+        android:gravity="center"
+        android:text="Special Offer"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button01"
+        android:layout_alignRight="@+id/Button01"
+        android:layout_below="@+id/Button01"
+        android:layout_marginTop="20dp"
+        android:background="#8A2908"
+        android:gravity="center"
+        android:text="Reservation"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/isopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/staffs"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/staffs"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Not Available"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
 </RelativeLayout>
