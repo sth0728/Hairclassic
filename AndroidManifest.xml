@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name="hours"></activity>
+        <activity android:name="style"></activity>
     </application>
 
 </manifest>

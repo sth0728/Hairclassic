@@ -20,15 +20,26 @@ public class MainActivity extends Activity {
 		
 		isOpenTxt = (TextView)findViewById(R.id.isopen);
 		
+		// set hours button
 		Button button = (Button)findViewById(R.id.hours);
 		button.setOnClickListener(new View.OnClickListener() {
-			
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(getApplicationContext(), hours.class);
 				startActivity(intent);
 			}
 		});
+		
+		// set styles button
+		Button style_button = (Button)findViewById(R.id.styles);
+		style_button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), style.class);
+				startActivity(intent);
+			}
+		});
+		
 		
 		this.updateStatus();
 	}
