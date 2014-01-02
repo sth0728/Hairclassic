@@ -40,6 +40,16 @@ public class MainActivity extends Activity {
 			}
 		});
 		
+		// set offer button
+		Button offer_button = (Button)findViewById(R.id.offer);
+		offer_button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), offer.class);
+				startActivity(intent);
+			}
+		});
+		
 		
 		this.updateStatus();
 	}
