@@ -9,15 +9,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/txtOffer"
+    <Button
+        android:id="@+id/btnReservePhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:textColor="#ffffff"
-        android:text="text" />
+        android:text="Reserve by Phone" />
+
+    <Button
+        android:id="@+id/btnReserveOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnReservePhone"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnReservePhone"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:text="Reserve Online" />
 
 </RelativeLayout>

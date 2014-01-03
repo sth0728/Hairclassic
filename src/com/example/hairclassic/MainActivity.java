@@ -41,6 +41,16 @@ public class MainActivity extends Activity {
 		});
 		
 		// set offer button
+		Button staff_button = (Button)findViewById(R.id.staffs);
+		staff_button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), staff.class);
+				startActivity(intent);
+			}
+		});
+		
+		// set offer button
 		Button offer_button = (Button)findViewById(R.id.offer);
 		offer_button.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -49,6 +59,17 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 		});
+		
+		// set hours button
+		Button reservation_button = (Button)findViewById(R.id.reservation);
+		reservation_button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), reservation.class);
+				startActivity(intent);
+			}
+		});
+		
 		
 		
 		this.updateStatus();

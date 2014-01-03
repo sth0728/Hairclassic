@@ -27,6 +27,7 @@
         <activity android:name="style"></activity>
         <activity android:name="offer"></activity>
         <activity android:name="staff"></activity>
+        <activity android:name="reservation"></activity>
     </application>
 
 </manifest>
