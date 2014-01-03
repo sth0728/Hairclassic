@@ -26,6 +26,7 @@
         <activity android:name="hours"></activity>
         <activity android:name="style"></activity>
         <activity android:name="offer"></activity>
+        <activity android:name="staff"></activity>
     </application>
 
 </manifest>
