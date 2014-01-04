@@ -59,19 +59,6 @@
         android:text="Special Offer"
         android:textColor="#ffffff" />
 
-    <TextView
-        android:id="@+id/isopen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/staffs"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/staffs"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:text="Not Available"
-        android:textColor="#ffffff"
-        android:textSize="30dp" />
-
     <Button
         android:id="@+id/reservation"
         android:layout_width="wrap_content"
@@ -84,5 +71,30 @@
         android:gravity="center"
         android:text="Reservation"
         android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/holiday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reservation"
+        android:layout_alignRight="@+id/reservation"
+        android:layout_below="@+id/reservation"
+        android:layout_marginTop="20dp"
+        android:background="#8A2908"
+        android:gravity="center"
+        android:text="Holiday"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/isopen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/holiday"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/holiday"
+        android:gravity="center"
+        android:text="Not Available"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
 
 </RelativeLayout>

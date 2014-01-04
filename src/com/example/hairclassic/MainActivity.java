@@ -1,8 +1,18 @@
 package com.example.hairclassic;
 
+import java.io.InputStream;
 import java.util.Calendar;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.ResponseHandler;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.BasicResponseHandler;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 import android.os.Bundle;
+import android.os.StrictMode;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
@@ -11,6 +21,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
+	HttpClient httpclient;
+	HttpPost httppost;
+	HttpResponse response;
 	
 	private static TextView isOpenTxt;
 	@Override
@@ -70,9 +83,23 @@ public class MainActivity extends Activity {
 			}
 		});
 		
-		
+		// set hours button
+		Button holiday_button = (Button)findViewById(R.id.holiday);
+		holiday_button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), holiday.class);
+				startActivity(intent);
+			}
+		});
 		
 		this.updateStatus();
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		this.onCreate(null);
 	}
 
 	@Override
@@ -82,18 +109,24 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	@SuppressLint("NewApi")
 	public void updateStatus(){
-		Calendar c = Calendar.getInstance();
-		int day = c.get(Calendar.DAY_OF_WEEK);
-		int hour = c.get(Calendar.HOUR_OF_DAY);
-		
-		if (day == 1){ // case Sunday
-			isOpenTxt.setText("Status: Closed");
-		} else if (hour >= 20 || hour < 11){
-			isOpenTxt.setText("Status: Closed");
-		} else {
-			isOpenTxt.setText("Status: Open (11am-8pm)");
-		}
+	    StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+	    StrictMode.setThreadPolicy(policy);
+	    
+	    TextView tv = (TextView) findViewById(R.id.isopen);
+	    
+	    try{
+	    	httpclient = new DefaultHttpClient();
+	    	httppost = new HttpPost("http://192.168.3.100/hairClassic_php/hours.php");
+	    	
+	    	response = httpclient.execute(httppost);
+	    	ResponseHandler<String> responseHandler = new BasicResponseHandler();
+	    	final String response = httpclient.execute(httppost, responseHandler);
+	    	tv.setText("Status: " + response);
+	    } catch(Exception E){
+	    	tv.setText("Connection Problem.");
+	    }
 	}
 }
 
