@@ -9,25 +9,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/txtDateSelection"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
     <TextView
-        android:id="@+id/txtHolidayTitle"
+        android:id="@+id/txtDateSelection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Holidays"
+        android:text="Please Select a Date"
         android:textColor="#ffffff"
-        android:textSize="33sp" />
-
-    <TextView
-        android:id="@+id/txtHolidays"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/txtHolidayTitle"
-        android:text="Not Available"
-        android:textColor="#ffffff" />
+        android:textSize="28sp" />
 
 </RelativeLayout>

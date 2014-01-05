@@ -95,12 +95,6 @@ public class MainActivity extends Activity {
 		
 		this.updateStatus();
 	}
-	
-	@Override
-	protected void onResume() {
-		super.onResume();
-		this.onCreate(null);
-	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

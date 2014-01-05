@@ -29,6 +29,10 @@
         <activity android:name="staff"></activity>
         <activity android:name="reservation"></activity>
         <activity android:name="holiday"></activity>
+        <activity android:name="reservationOnline"></activity>
+        <activity android:name="reservationDate"></activity>
+        <activity android:name="reservationType"></activity>
+        <activity android:name="reservationProfile"></activity>
         
     </application>
 

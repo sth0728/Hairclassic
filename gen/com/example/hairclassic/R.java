@@ -47,42 +47,58 @@ public final class R {
     }
     public static final class id {
         public static final int Thursday=0x7f08000d;
-        public static final int action_settings=0x7f08001b;
-        public static final int btnReserveOnline=0x7f080013;
-        public static final int btnReservePhone=0x7f080012;
+        public static final int action_settings=0x7f080026;
+        public static final int btnReserveOnline=0x7f080014;
+        public static final int btnReservePhone=0x7f080013;
+        public static final int btnReserveProfile=0x7f08001d;
+        public static final int editTextName=0x7f08001b;
+        public static final int editTextNumber=0x7f08001c;
         public static final int friday=0x7f080010;
-        public static final int gallery1=0x7f080019;
+        public static final int gallery1=0x7f080024;
         public static final int holiday=0x7f080005;
         public static final int hours=0x7f080000;
         public static final int isopen=0x7f080006;
-        public static final int monday=0x7f08000a;
-        public static final int my_text=0x7f08001a;
+        public static final int listView1=0x7f080017;
+        public static final int listViewHour=0x7f080015;
+        public static final int listViewReservationType=0x7f08001e;
+        public static final int my_text=0x7f080025;
         public static final int offer=0x7f080003;
         public static final int reservation=0x7f080004;
         public static final int saturday=0x7f08000f;
-        public static final int staff1=0x7f080014;
-        public static final int staff2=0x7f080015;
+        public static final int staff1=0x7f08001f;
+        public static final int staff2=0x7f080020;
         public static final int staffs=0x7f080002;
         public static final int styles=0x7f080001;
         public static final int sunday=0x7f08000e;
+        public static final int textView=0x7f080011;
         public static final int textView1=0x7f080009;
         public static final int tuesday=0x7f08000b;
+        public static final int txtDateSelection=0x7f080018;
         public static final int txtHolidayTitle=0x7f080007;
         public static final int txtHolidays=0x7f080008;
-        public static final int txtOffer=0x7f080011;
-        public static final int txtStaffDescrip1=0x7f080018;
-        public static final int txtStaffName1=0x7f080016;
-        public static final int txtStaffName2=0x7f080017;
+        public static final int txtHourSelection=0x7f080016;
+        public static final int txtOffer=0x7f080012;
+        public static final int txtProfileName=0x7f08000a;
+        public static final int txtProfileNumber=0x7f08001a;
+        public static final int txtStaffDescrip1=0x7f080023;
+        public static final int txtStaffName1=0x7f080021;
+        public static final int txtStaffName2=0x7f080022;
+        public static final int txtTypeSelection=0x7f080019;
         public static final int wednesday=0x7f08000c;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int holiday=0x7f030001;
         public static final int hours=0x7f030002;
-        public static final int offer=0x7f030003;
-        public static final int reservation=0x7f030004;
-        public static final int staff=0x7f030005;
-        public static final int styles=0x7f030006;
+        public static final int listview=0x7f030003;
+        public static final int offer=0x7f030004;
+        public static final int reservation=0x7f030005;
+        public static final int reservationdate=0x7f030006;
+        public static final int reservationonline=0x7f030007;
+        public static final int reservationprofile=0x7f030008;
+        public static final int reservationtype=0x7f030009;
+        public static final int staff=0x7f03000a;
+        public static final int styles=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f070000;
