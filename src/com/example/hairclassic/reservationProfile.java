@@ -29,9 +29,11 @@ public class reservationProfile extends Activity {
 			public void onClick(View arg0) {
 				String nameTxt = inputName.getText().toString().trim();
 				String numberTxt = inputNumber.getText().toString().trim();
+				// case where boxes are empty
 				if (nameTxt.isEmpty() | numberTxt.isEmpty()) {
 					String txtmsg = "You much fill every box.";
 					Toast.makeText(reservationProfile.this, txtmsg, Toast.LENGTH_SHORT).show();
+				// case where textbox number is not integer
 				} else if (!isInteger(numberTxt)){
 					String txtmsg = "Contact number should conain numbers only." + numberTxt;
 					Toast.makeText(reservationProfile.this, txtmsg, Toast.LENGTH_SHORT).show();
